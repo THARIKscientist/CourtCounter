@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:text="@string/teamA"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/scoreTeamA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:text="0"
+                android:textSize="40sp"
+                android:textAppearance="?android:textAppearanceLarge"/>
+
+            <Button
+                android:id="@+id/threePointsForTeamA"
+                android:onClick="threePointsForTeamA"
+                android:layout_width="@dimen/buttonWidth"
+                android:layout_height="@dimen/buttonHeight"
+                android:layout_gravity="center"
+                android:text="@string/points_3_Button"
+                android:layout_marginBottom="8dp"
+                android:textSize="@dimen/buttonTextSize"
+                android:background="@color/buttonPointsColor"/>
+
+            <Button
+                android:id="@+id/twoPointsForTeamA"
+                android:onClick="twoPointsForTeamA"
+                android:layout_width="@dimen/buttonWidth"
+                android:layout_height="@dimen/buttonHeight"
+                android:layout_gravity="center"
+                android:text="@string/points_2_Button"
+                android:layout_marginBottom="8dp"
+                android:textSize="@dimen/buttonTextSize"
+                android:background="@color/buttonPointsColor"/>
+            <Button
+                android:id="@+id/freePointsForTeamA"
+                android:onClick="freePointsForTeams"
+                android:layout_width="@dimen/buttonWidth"
+                android:layout_height="@dimen/buttonHeight"
+                android:layout_gravity="center"
+                android:text="@string/points_FreeThrow_Button"
+                android:layout_marginBottom="8dp"
+                android:textSize="@dimen/buttonTextSize"
+                android:background="@color/buttonPointsColor"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:text="@string/teamB"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/scoreTeamB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:text="0"
+                android:textSize="40sp"
+                android:textAppearance="?android:textAppearanceLarge"/>
+
+            <Button
+                android:id="@+id/threePointsForTeamB"
+                android:onClick="threePointsForTeamB"
+                android:layout_width="@dimen/buttonWidth"
+                android:layout_height="@dimen/buttonHeight"
+                android:layout_gravity="center"
+                android:text="@string/points_3_Button"
+                android:layout_marginBottom="8dp"
+                android:textSize="@dimen/buttonTextSize"
+                android:background="@color/buttonPointsColor"/>
+
+            <Button
+                android:id="@+id/twoPointsForTeamB"
+                android:onClick="twoPointsForTeamB"
+                android:layout_width="@dimen/buttonWidth"
+                android:layout_height="@dimen/buttonHeight"
+                android:layout_gravity="center"
+                android:text="@string/points_2_Button"
+                android:layout_marginBottom="8dp"
+                android:textSize="@dimen/buttonTextSize"
+                android:background="@color/buttonPointsColor"/>
+            <Button
+                android:id="@+id/freePointsForTeamB"
+                android:onClick="freePointsForTeams"
+                android:layout_width="@dimen/buttonWidth"
+                android:layout_height="@dimen/buttonHeight"
+                android:layout_gravity="center"
+                android:text="@string/points_FreeThrow_Button"
+                android:layout_marginBottom="8dp"
+                android:textSize="@dimen/buttonTextSize"
+                android:background="@color/buttonPointsColor"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reset_Button"
+        android:layout_width="60dp"
+        android:layout_height="44dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:text="@string/reset_Button"
+        android:background="@color/buttonPointsColor"
+        android:textSize="14sp"
+        android:onClick="resetScores"/>
+</LinearLayout>
